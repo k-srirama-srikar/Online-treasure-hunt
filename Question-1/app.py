@@ -6,3 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def temp():
     return render_template("page.html")
+
+
+if __name__ == '__main__':
+    app.run()
