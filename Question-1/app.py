@@ -1,11 +1,11 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def temp():
-    return render_template("page.html")
+    return jsonfy(render_template("page.html"))
 
 
 if __name__ == '__main__':
